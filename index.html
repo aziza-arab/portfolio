@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Aziza Arab · Portfolio BUT Informatique</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet"/>
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
     <style>
-        /* ===== RESET & VARIABLES ===== */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --bg-primary: #0a0a1a;
@@ -31,17 +26,9 @@
             --spacing: 80px;
         }
         html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.8; overflow-x: hidden; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
         a { color: inherit; text-decoration: none; }
-
-        /* ===== NAVIGATION ===== */
         .navbar {
             position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
             padding: 20px 0;
@@ -62,7 +49,6 @@
         .nav-toggle { display: none; background: none; border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); padding: 8px 16px; font-size: 1.2rem; cursor: pointer; }
         .nav-toggle:hover { background: var(--bg-card); }
 
-        /* ===== HERO ===== */
         .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 140px 0 100px; }
         .hero-bg { position: absolute; inset: 0; z-index: 0; }
         .hero-bg-shape { position: absolute; border-radius: 50%; filter: blur(140px); opacity: 0.25; }
@@ -96,14 +82,12 @@
         @keyframes spin { 0% { transform: rotate(0); } 100% { transform: rotate(360deg); } }
         .hero-image-wrapper { display: flex; justify-content: center; align-items: center; position: relative; }
 
-        /* ===== SECTIONS ===== */
         .section-header { text-align: center; margin-bottom: 72px; }
         .section-tag { display: inline-flex; align-items: center; gap: 10px; padding: 6px 18px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 999px; font-size: 0.85rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 20px; }
         .section-tag i { color: var(--accent); }
         .section-header h2 { font-size: clamp(2.2rem,3.5vw,3rem); font-weight: 800; margin-bottom: 16px; }
         .section-header p { color: var(--text-secondary); font-size: 1.15rem; max-width: 600px; margin: 0 auto; }
 
-        /* ===== SKILLS ===== */
         .skills { padding: var(--spacing) 0; background: var(--bg-secondary); }
         .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px,1fr)); gap: 32px; }
         .skill-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px 32px; transition: var(--transition); }
@@ -114,7 +98,6 @@
         .skill-chips span { padding: 6px 16px; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 999px; font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); transition: var(--transition); }
         .skill-chips span:hover { border-color: var(--accent); color: var(--text-primary); }
 
-        /* ===== PROJECTS ===== */
         .projects { padding: var(--spacing) 0; }
         .projects-grid { display: grid; grid-template-columns: 1fr; gap: 48px; }
         .project-detail { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 48px; transition: var(--transition); }
@@ -142,7 +125,6 @@
         .project-visual i { font-size: 3.5rem; color: var(--accent); opacity: 0.4; }
         .project-visual p { color: var(--text-secondary); font-size: 0.9rem; margin-top: 10px; }
 
-        /* ===== CV SECTION ===== */
         .cv-section { padding: var(--spacing) 0; background: var(--bg-secondary); }
         .cv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 32px; margin: 40px 0; }
         .cv-block { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; }
@@ -158,7 +140,6 @@
         .cv-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px; }
         .cv-profile { color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px; font-size: 1.05rem; }
 
-        /* ===== CONTACT ===== */
         .contact { padding: var(--spacing) 0; background: var(--bg-secondary); }
         .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
         .contact-info h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 16px; }
@@ -178,7 +159,6 @@
         .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-secondary); }
         .contact-form .btn { grid-column: 1/-1; justify-content: center; }
 
-        /* ===== FOOTER ===== */
         .footer { padding: 32px 0; border-top: 1px solid var(--border); }
         .footer-content { display: flex; justify-content: space-between; align-items: center; }
         .footer-content p { font-size: 0.9rem; color: var(--text-secondary); }
@@ -186,7 +166,6 @@
         .footer-social a { width: 40px; height: 40px; border-radius: 50%; background: var(--bg-card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1rem; color: var(--text-secondary); transition: var(--transition); }
         .footer-social a:hover { background: var(--accent); color: white; transform: translateY(-3px); }
 
-        /* ===== RESPONSIVE ===== */
         @media (max-width: 992px) {
             .hero-container { grid-template-columns: 1fr; text-align: center; }
             .hero-desc { margin-left: auto; margin-right: auto; }
@@ -226,7 +205,6 @@
 </head>
 <body>
 
-<!-- ===== NAVIGATION ===== -->
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <a href="#" class="nav-logo"><i class="fas fa-terminal"></i> Aziza<span class="dot">.</span></a>
@@ -241,7 +219,6 @@
     </div>
 </nav>
 
-<!-- ===== HERO ===== -->
 <section class="hero" id="about">
     <div class="hero-bg">
         <div class="hero-bg-shape shape-1"></div>
@@ -281,7 +258,6 @@
     </div>
 </section>
 
-<!-- ===== SKILLS ===== -->
 <section id="skills" class="skills">
     <div class="container">
         <div class="section-header">
@@ -326,7 +302,6 @@
     </div>
 </section>
 
-<!-- ===== PROJECTS ===== -->
 <section id="projects" class="projects">
     <div class="container">
         <div class="section-header">
@@ -338,17 +313,14 @@
 
             <!-- PROJET 1 : Learn Conquer -->
             <div class="project-detail">
-                <div class="project-header">
-                    <span class="project-badge" style="background: #6c5ce7;"><i class="fas fa-gamepad"></i> SAE 1.02</span>
-                </div>
+                <div class="project-header"><span class="project-badge" style="background: #6c5ce7;"><i class="fas fa-gamepad"></i> SAE 1.02</span></div>
                 <h3>Learn Conquer</h3>
                 <p class="project-subtitle">Jeu ludo-pédagogique en Java</p>
                 <div class="project-visual"><i class="fas fa-gamepad"></i><p>Interface du jeu Learn Conquer montrant la carte composée de tuiles et le déplacement du joueur.</p></div>
-                <div class="project-desc"><strong>Résumé :</strong> Le projet Learn Conquer est un jeu ludo-pédagogique développé en Java (iJava). Le joueur évolue sur une carte composée de tuiles représentant différents types de terrain. Certaines tuiles déclenchent des questions pédagogiques lorsque le joueur les atteint. L'objectif principal est de permettre à l'utilisateur d'apprendre en répondant à des questions tout en explorant une carte interactive.</div>
-                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Programmation en Java (iJava)</li><li>Gestion de structures de données (tableaux, cartes)</li><li>Lecture et utilisation de fichiers externes (.txt, .csv)</li><li>Implémentation d'une logique de jeu</li></ul></div>
+                <div class="project-desc"><strong>Résumé :</strong> Le projet Learn Conquer est un jeu ludo-pédagogique développé en Java (iJava). Le joueur évolue sur une carte composée de tuiles représentant différents types de terrain. Certaines tuiles déclenchent des questions pédagogiques lorsque le joueur les atteint.</div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Programmation en Java (iJava)</li><li>Gestion de structures de données</li><li>Lecture et utilisation de fichiers externes</li><li>Implémentation d'une logique de jeu</li></ul></div>
                 <div class="project-section"><h4><i class="fas fa-users"></i> Savoir-être</h4><ul><li>Travail en équipe</li><li>Rigueur dans le développement</li><li>Communication entre binôme</li><li>Organisation du travail</li></ul></div>
-                <div class="project-section"><h4><i class="fas fa-box"></i> Livrables</h4><ul><li>Code source Java</li><li>Fichiers de données (.txt, .csv)</li><li>Classes Java (Question, Tuile, Matiere)</li></ul></div>
-                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de renforcer mes compétences en programmation Java et en structuration d'un projet de jeu. J'ai appris à organiser un code en plusieurs classes et à gérer des données externes via des fichiers.</p></div>
+                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de renforcer mes compétences en programmation Java et en structuration d'un projet de jeu.</p></div>
                 <div class="project-links">
                     <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/tree/4db3f96df30ad92fc04d753e2f729e340a00178f/Sae-s1/SAE1.01-SAE1.02/LearnConquer/src" target="_blank"><i class="fab fa-gitlab"></i> Code source</a>
                     <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/blob/4db3f96df30ad92fc04d753e2f729e340a00178f/Sae-s1/SAE1.01-SAE1.02/LearnConquer/README.txt" target="_blank"><i class="fas fa-book"></i> README</a>
@@ -357,9 +329,341 @@
 
             <!-- PROJET 2 : VM Debian -->
             <div class="project-detail">
-                <div class="project-header">
-                    <span class="project-badge" style="background: #00b894;"><i class="fas fa-server"></i> SAE 1.03</span>
-                </div>
+                <div class="project-header"><span class="project-badge" style="background: #00b894;"><i class="fas fa-server"></i> SAE 1.03</span></div>
                 <h3>Installation d'une machine virtuelle</h3>
                 <p class="project-subtitle">Installation Debian sous VirtualBox</p>
-                <div class="project-visual"><i class="fas fa-des
+                <div class="project-visual"><i class="fas fa-desktop"></i><p>Installation et utilisation d'un système d'exploitation Debian dans une machine virtuelle sous VirtualBox.</p></div>
+                <div class="project-desc"><strong>Résumé :</strong> Installation d'un système Linux (Debian) sur une machine virtuelle à l'aide de VirtualBox pour comprendre le processus d'installation d'un système et le fonctionnement de la virtualisation.</div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Installation de Linux (Debian)</li><li>Utilisation de VirtualBox</li><li>Configuration matérielle d'une VM</li><li>Utilisation du terminal Linux</li></ul></div>
+                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de découvrir l'installation et la configuration d'un système Linux dans une machine virtuelle.</p></div>
+                <div class="project-links">
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/blob/main/Sae-s1/SAE1.03/Pr%C3%A9sentation%20en%20anglais%20VM%20.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Présentation en anglais</a>
+                </div>
+            </div>
+            <!-- PROJET 3 : Garage Automobile -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <span class="project-badge" style="background: #fdcb6e;"><i class="fas fa-database"></i> SAE 1.04</span>
+                </div>
+                <h3>Garage Automobile</h3>
+                <p class="project-subtitle">Base de données relationnelle sous Access</p>
+                <div class="project-visual"><i class="fas fa-database"></i><p>Schéma relationnel de la base de données du garage automobile sous Microsoft Access.</p></div>
+                <div class="project-desc"><strong>Résumé :</strong> Création d'une base de données relationnelle avec Microsoft Access pour gérer un garage automobile. Stockage et organisation des données des clients, véhicules, interventions, pièces et factures.</div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Conception d'une base de données relationnelle</li><li>Utilisation de Microsoft Access</li><li>Création de tables et gestion des relations</li><li>Mise en place de formulaires et d'états</li></ul></div>
+                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de comprendre la conception d'une base de données relationnelle avec Microsoft Access.</p></div>
+                <div class="project-links">
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/tree/main/Sae-s1/SAE1.04/projet%20BDD" target="_blank"><i class="fas fa-database"></i> Projet BDD</a>
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/blob/main/Sae-s1/SAE1.04/Rendu%20%C3%A9conomie.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Rapport économie</a>
+                </div>
+            </div>
+
+            <!-- PROJET 4 : Covoiturage -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <span class="project-badge" style="background: #fd79a8;"><i class="fas fa-car"></i> SAE 1.05-1.06</span>
+                </div>
+                <h3>Plateforme de Covoiturage</h3>
+                <p class="project-subtitle">Site web en HTML/CSS</p>
+                <div class="project-visual"><i class="fas fa-globe"></i><p>Interface de la plateforme de covoiturage permettant la recherche et la proposition de trajets.</p></div>
+                <div class="project-desc"><strong>Résumé :</strong> Développement d'une plateforme de covoiturage en ligne destinée aux employés de l'entreprise FromSoftware. L'utilisateur peut créer un compte, proposer un trajet ou rechercher une offre existante.</div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Création de pages web en HTML5</li><li>Mise en forme et structuration avec CSS</li><li>Organisation d'une interface multi-pages</li></ul></div>
+                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de travailler sur la création d'un site web en HTML et CSS.</p></div>
+                <div class="project-links">
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/tree/main/Sae-s1/SAE1.05-SAE1.06" target="_blank"><i class="fas fa-globe"></i> Site web</a>
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/blob/main/Sae-s1/SAE1.05-SAE1.06/Newsletter.pdf" target="_blank"><i class="fas fa-envelope"></i> Newsletter</a>
+                </div>
+            </div>
+
+            <!-- PROJET 5 : Exploration algorithmique -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <span class="project-badge" style="background: #e17055;"><i class="fas fa-project-diagram"></i> SAE 2.01-2.02</span>
+                </div>
+                <h3>Exploration algorithmique</h3>
+                <p class="project-subtitle">Assistant de voyage avec graphes et JavaFX</p>
+                <div class="project-visual"><i class="fas fa-route"></i><p>Modélisation du réseau de transport sous forme de graphe.</p></div>
+                <div class="project-desc"><strong>Résumé :</strong> Développement d'un assistant de voyage permettant de calculer et comparer différents itinéraires entre plusieurs villes reliées par un réseau de transport. Modélisation sous forme de graphe avec algorithmes de plus courts chemins (Yen). Interface JavaFX.</div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Programmation orientée objet en Java</li><li>Modélisation sous forme de graphe</li><li>Algorithmes de plus courts chemins (Yen)</li><li>Interface graphique en JavaFX</li></ul></div>
+                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis d'approfondir mes compétences en programmation orientée objet et en algorithmes de graphes.</p></div>
+                <div class="project-links">
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/tree/main/Sae-s2/SAE%202.01%20-%20SAE%202.02" target="_blank"><i class="fab fa-gitlab"></i> Projet complet</a>
+                </div>
+            </div>
+
+            <!-- PROJET 6 : Forgejo -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <span class="project-badge" style="background: #a29bfe;"><i class="fas fa-code-branch"></i> SAE 2.03</span>
+                </div>
+                <h3>Déploiement Forgejo</h3>
+                <p class="project-subtitle">Installation serveur Git sous Debian</p>
+                <div class="project-visual"><i class="fas fa-server"></i><p>Création d'un espace Forgejo utilisé comme support de gestion de projet.</p></div>
+                <div class="project-desc"><strong>Résumé :</strong> Installation et configuration d'un environnement serveur sous machine virtuelle Linux (Debian) pour héberger un service de gestion de dépôts Git appelé Forgejo.</div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Installation et configuration de Linux (Debian)</li><li>Utilisation de VirtualBox</li><li>Mise en place d'un service web (Forgejo)</li><li>Configuration réseau (NAT + redirection de port)</li></ul></div>
+                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de découvrir l'administration système sous Linux et la mise en place d'un service web.</p></div>
+                <div class="project-links">
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/blob/main/Sae-s2/SAE%202.03/rapport.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Rapport PDF</a>
+                </div>
+            </div>
+
+            <!-- PROJET 7 : Parcoursup -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <span class="project-badge" style="background: #55efc4;"><i class="fas fa-chart-bar"></i> SAE 2.04</span>
+                </div>
+                <h3>Exploitation Parcoursup</h3>
+                <p class="project-subtitle">Analyse de données avec PostgreSQL</p>
+                <div class="project-visual"><i class="fas fa-database"></i><p>MCD du projet représentant l'organisation des données Parcoursup dans une base de données relationnelle.</p></div>
+                <div class="project-desc"><strong>Résumé :</strong> Exploitation de données réelles issues de la plateforme Parcoursup. Importation d'un jeu de données massif, analyse, puis structuration dans une base de données relationnelle avec normalisation jusqu'à la 3NF.</div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Analyse de données brutes (CSV)</li><li>Importation de données en base SQL</li><li>Création de tables relationnelles</li><li>Normalisation des données (3NF)</li><li>Requêtes SQL d'extraction et d'analyse</li></ul></div>
+                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de travailler sur l'analyse et la structuration de données réelles.</p></div>
+                <div class="project-links">
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/tree/main/Sae-s2/SAE%202.04" target="_blank"><i class="fas fa-database"></i> Projet complet</a>
+                </div>
+            </div>
+
+            <!-- PROJET 8 : HomeHero -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <span class="project-badge" style="background: #f39c12;"><i class="fas fa-mobile-alt"></i> SAE 2.05</span>
+                </div>
+                <h3>HomeHero</h3>
+                <p class="project-subtitle">Gestion de projet - Application de services à la personne</p>
+                <div class="project-visual"><i class="fas fa-mobile-alt"></i><p>Maquettes de l'application HomeHero.</p></div>
+                <div class="project-desc"><strong>Résumé :</strong> Conception d'une application mobile mettant en relation des utilisateurs ayant besoin d'aide avec des particuliers disponibles. Analyse de marché, étude de la concurrence, analyse PESTEL, diagramme de Gantt, plan de communication et budget prévisionnel.</div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Utilisation d'outils numériques de gestion de projet</li><li>Réalisation d'un diagramme de Gantt</li><li>Conception de maquettes sur Canva</li><li>Analyse de marché et étude de la concurrence</li></ul></div>
+                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de découvrir la gestion de projet et les différentes étapes de conception d'une application.</p></div>
+                <div class="project-links">
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/blob/main/Sae-s2/SAE%202.05/SAE%202.05.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Rapport de gestion</a>
+                </div>
+            </div>
+
+            <!-- PROJET 9 : Ordinateur quantique -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <span class="project-badge" style="background: #6c5ce7;"><i class="fas fa-atom"></i> SAE 2.06</span>
+                </div>
+                <h3>Ordinateur quantique</h3>
+                <p class="project-subtitle">Vulgarisation scientifique - Vidéo</p>
+                <div class="project-visual"><i class="fas fa-atom"></i><p>Illustration d'un ordinateur quantique et des concepts associés (qubits, superposition, intrication).</p></div>
+                <div class="project-desc"><strong>Résumé :</strong> Réalisation d'une vidéo de vulgarisation scientifique sur le thème de l'ordinateur quantique. Explication simple du fonctionnement de cette technologie et de ses différences avec un ordinateur classique.</div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Recherche et exploitation de ressources documentaires</li><li>Vulgarisation d'un concept scientifique complexe</li><li>Structuration d'un scénario de vidéo pédagogique</li><li>Utilisation d'outils numériques de montage</li></ul></div>
+                <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de développer mes compétences en vulgarisation scientifique et en recherche documentaire.</p></div>
+                <div class="project-links">
+                    <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/tree/main/Sae-s2/SAE%202.06/Rendu%20COM" target="_blank"><i class="fas fa-video"></i> Rendu COM</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== CV SECTION ===== -->
+<section id="cv" class="cv-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag"><i class="fas fa-file-pdf"></i> CV</span>
+            <h2>Mon curriculum vitae</h2>
+            <p>Étudiante en BUT Informatique, parcours B · Déploiement d'applications communicantes et sécurisées.</p>
+        </div>
+
+        <div class="cv-profile">
+            <p><strong>Aziza Arab</strong> · +33 7 59 04 31 77 · aziza.arab.contact@gmail.com</p>
+            <p>Rue de l'orangerie, 94170 Le Perreux-sur-Marne</p>
+        </div>
+
+        <div class="cv-grid">
+            <div class="cv-block">
+                <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+                <div class="cv-item">
+                    <span class="cv-date">2025 - En cours</span>
+                    <strong>BUT 1 Informatique</strong>
+                    <span>IUT de Lille, Villeneuve d'Ascq</span>
+                </div>
+                <div class="cv-item">
+                    <span class="cv-date">2024 - 2025</span>
+                    <strong>Licence 1 Informatique</strong>
+                    <span>Université Mouloud Mammeri, Tizi Ouzou</span>
+                </div>
+                <div class="cv-item">
+                    <span class="cv-date">2024</span>
+                    <strong>Baccalauréat Sciences Expérimentales</strong>
+                    <span>Mention Bien · Lycée Hocine AIT AHMED</span>
+                </div>
+            </div>
+
+            <div class="cv-block">
+                <h3><i class="fas fa-code"></i> Langages de programmation</h3>
+                <div class="cv-langs">
+                    <span>Java</span><span>C</span><span>Pascal</span>
+                    <span>HTML5</span><span>CSS3</span><span>SQL</span>
+                </div>
+            </div>
+
+            <div class="cv-block">
+                <h3><i class="fas fa-server"></i> Systèmes & Réseaux</h3>
+                <div class="cv-langs">
+                    <span>Linux (Debian)</span><span>Windows</span><span>VirtualBox</span>
+                    <span>GNS3</span><span>TCP/IP</span><span>DNS/DHCP</span><span>Firewall</span><span>SSH</span>
+                </div>
+            </div>
+
+            <div class="cv-block">
+                <h3><i class="fas fa-language"></i> Langues</h3>
+                <div class="cv-langs">
+                    <span>Kabyle · Maternelle</span>
+                    <span>Français · Courant</span>
+                    <span>Arabe · Courant</span>
+                    <span>Anglais · Intermédiaire</span>
+                </div>
+            </div>
+
+            <div class="cv-block">
+                <h3><i class="fas fa-heart"></i> Centres d'intérêt</h3>
+                <div class="cv-langs">
+                    <span>📚 Lecture</span>
+                    <span>🔒 Cybersécurité</span>
+                    <span>🥋 Wushu</span>
+                    <span>🔬 Veille technologique</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-actions">
+            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Télécharger le CV</a>
+            <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Me contacter</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Contact</span>
+                <h2>Parlons de votre projet</h2>
+                <p>Je suis à la recherche d'une alternance à partir de septembre 2026. N'hésitez pas à me contacter !</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:aziza.arab.contact@gmail.com">aziza.arab.contact@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Téléphone</strong>
+                            <span>+33 7 59 04 31 77</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Adresse</strong>
+                            <span>Rue de l'orangerie, 94170 Le Perreux-sur-Marne</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-gitlab"></i>
+                        <div>
+                            <strong>GitLab</strong>
+                            <a href="https://gitlab.com/aziza.arab.contact" target="_blank">@aziza.arab.contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" placeholder="Votre nom" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="votre@email.fr" />
+                </div>
+                <div class="form-group full-width">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" placeholder="Objet de votre message" />
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Envoyer
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2026 Aziza Arab · Made with <i class="fas fa-heart" style="color: #6c5ce7;"></i></p>
+            <div class="footer-social">
+                <a href="https://gitlab.com/aziza.arab.contact" target="_blank" aria-label="GitLab"><i class="fab fa-gitlab"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.skill-card, .project-detail, .contact-item, .cv-block').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.6s ease';
+        observer.observe(el);
+    });
+</script>
+</body>
+</html>
