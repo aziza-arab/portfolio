@@ -150,14 +150,11 @@
         .contact-item strong { display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); }
         .contact-item a, .contact-item span { font-size: 1rem; }
         .contact-item a:hover { color: var(--accent); }
-        .contact-form { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-        .form-group { display: flex; flex-direction: column; gap: 8px; }
-        .form-group.full-width { grid-column: 1/-1; }
-        .form-group label { font-size: 0.9rem; font-weight: 600; }
-        .form-group input, .form-group textarea { padding: 14px 18px; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 12px; color: var(--text-primary); font-family: 'Inter', sans-serif; font-size: 1rem; transition: var(--transition); }
-        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(108,92,231,0.15); }
-        .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-secondary); }
-        .contact-form .btn { grid-column: 1/-1; justify-content: center; }
+        .contact-actions { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; }
+        .contact-actions .btn { width: 100%; justify-content: center; }
+        .contact-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; }
+        .contact-card h3 { margin-bottom: 16px; }
+        .contact-card p { color: var(--text-secondary); margin-bottom: 20px; }
 
         .footer { padding: 32px 0; border-top: 1px solid var(--border); }
         .footer-content { display: flex; justify-content: space-between; align-items: center; }
@@ -183,12 +180,12 @@
             .nav-links.active { display: flex; }
             .nav-toggle { display: block; }
             .skills-grid { grid-template-columns: 1fr; }
-            .contact-form { grid-template-columns: 1fr; padding: 24px; }
             .hero-stats { gap: 32px; }
             .stat-number { font-size: 1.8rem; }
             .project-detail { padding: 24px; }
             .cv-grid { grid-template-columns: 1fr; }
             .hero { padding: 120px 0 60px; }
+            .contact-actions .btn { font-size: 0.9rem; padding: 12px 20px; }
         }
         @media (max-width: 480px) {
             .hero-actions { flex-direction: column; width: 100%; }
@@ -200,6 +197,7 @@
             .project-detail { padding: 20px; }
             .project-section ul li { font-size: 0.7rem; padding: 4px 12px; }
             .project-links { flex-direction: column; gap: 12px; }
+            .contact-actions .btn { font-size: 0.8rem; padding: 10px 16px; }
         }
     </style>
 </head>
@@ -340,6 +338,7 @@
                     <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/blob/main/Sae-s1/SAE1.03/Pr%C3%A9sentation%20en%20anglais%20VM%20.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Présentation en anglais</a>
                 </div>
             </div>
+
             <!-- PROJET 3 : Garage Automobile -->
             <div class="project-detail">
                 <div class="project-header">
@@ -349,7 +348,7 @@
                 <p class="project-subtitle">Base de données relationnelle sous Access</p>
                 <div class="project-visual"><i class="fas fa-database"></i><p>Schéma relationnel de la base de données du garage automobile sous Microsoft Access.</p></div>
                 <div class="project-desc"><strong>Résumé :</strong> Création d'une base de données relationnelle avec Microsoft Access pour gérer un garage automobile. Stockage et organisation des données des clients, véhicules, interventions, pièces et factures.</div>
-                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Conception d'une base de données relationnelle</li><li>Utilisation de Microsoft Access</li><li>Création de tables et gestion des relations</li><li>Mise en place de formulaires et d'états</li></ul></div>
+                <div class="project-section"><h                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Conception d'une base de données relationnelle</li><li>Utilisation de Microsoft Access</li><li>Création de tables et gestion des relations</li><li>Mise en place de formulaires et d'états</li></ul></div>
                 <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de comprendre la conception d'une base de données relationnelle avec Microsoft Access.</p></div>
                 <div class="project-links">
                     <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/tree/main/Sae-s1/SAE1.04/projet%20BDD" target="_blank"><i class="fas fa-database"></i> Projet BDD</a>
@@ -557,7 +556,7 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <strong>Téléphone</strong>
-                            <span>+33 7 59 04 31 77</span>
+                            <a href="tel:+33759043177">+33 7 59 04 31 77</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -575,29 +574,24 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="contact-actions">
+                    <a href="mailto:aziza.arab.contact@gmail.com?subject=Demande%20d'alternance%20-%20Aziza%20Arab" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> M'envoyer un email
+                    </a>
+                    <a href="tel:+33759043177" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> M'appeler
+                    </a>
+                </div>
             </div>
 
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Nom complet</label>
-                    <input type="text" id="name" placeholder="Votre nom" />
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="votre@email.fr" />
-                </div>
-                <div class="form-group full-width">
-                    <label for="subject">Sujet</label>
-                    <input type="text" id="subject" placeholder="Objet de votre message" />
-                </div>
-                <div class="form-group full-width">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i> Envoyer
-                </button>
-            </form>
+            <div class="contact-card">
+                <h3><i class="fas fa-file-pdf"></i> Télécharger mon CV</h3>
+                <p>Vous pouvez également télécharger mon CV pour en savoir plus sur mon parcours et mes compétences.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                    <i class="fas fa-download"></i> Télécharger le CV
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -658,7 +652,7 @@
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.skill-card, .project-detail, .contact-item, .cv-block').forEach(el => {
+    document.querySelectorAll('.skill-card, .project-detail, .contact-item, .cv-block, .contact-card').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'all 0.6s ease';
