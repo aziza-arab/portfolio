@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aziza Arab · Portfolio Systèmes & Réseaux</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================
+NAVIGATION
+============================================ -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">
+            <i class="fas fa-terminal"></i> Aziza<span class="dot">.</span>
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="#about"><i class="fas fa-user"></i> À propos</a></li>
+            <li><a href="#skills"><i class="fas fa-cog"></i> Compétences</a></li>
+            <li><a href="#projects"><i class="fas fa-folder-open"></i> Projets</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        
+        <button class="nav-toggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ============================================
+HERO
+============================================ -->
+<section class="hero" id="about">
+    <div class="hero-bg">
+        <div class="hero-bg-shape shape-1"></div>
+        <div class="hero-bg-shape shape-2"></div>
+        <div class="hero-bg-shape shape-3"></div>
+    </div>
+    
+    <div class="hero-container">
+        <div class="hero-content">
+            <span class="hero-badge">
+                <i class="fas fa-rocket"></i> Recherche alternance · Septembre 2026
+            </span>
+            
+            <h1>
+                <span class="hero-greeting">Bonjour, je suis</span>
+                <span class="hero-name">Aziza Arab</span>
+                <span class="hero-title">Étudiante en BUT Informatique</span>
+                <span class="hero-subtitle">Systèmes · Réseaux · Bases de données</span>
+            </h1>
+            
+            <p class="hero-desc">
+                Passionnée par l'infrastructure IT, la cybersécurité et l'administration système.
+                À la recherche d'une alternance pour mettre en pratique mes compétences.
+            </p>
+            
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Voir mes projets
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Me contacter
+                </a>
+                <a href="#cv" class="btn btn-outline">
+                    <i class="fas fa-file-pdf"></i> CV
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Projets réalisés</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Matières maîtrisées</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Motivation</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="hero-image-wrapper">
+                <div class="hero-image-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="hero-image-ring"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+SKILLS
+============================================ -->
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag"><i class="fas fa-cog"></i> Expertise</span>
+            <h2>Mes compétences techniques</h2>
+            <p>Technologies et outils que je maîtrise</p>
+        </div>
+        
+        <div class="skills-grid">
+            <!-- Systèmes & Réseaux -->
+            <div class="skill-card">
+                <div class="skill-icon" style="background: linear-gradient(135deg, #6c5ce7, #a29bfe);">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Systèmes & Réseaux</h3>
+                <div class="skill-chips">
+                    <span>Linux (Debian)</span>
+                    <span>Windows Server</span>
+                    <span>VirtualBox</span>
+                    <span>GNS3</span>
+                    <span>TCP/IP</span>
+                    <span>DNS/DHCP</span>
+                    <span>Firewall</span>
+                    <span>SSH</span>
+                </div>
+            </div>
+            
+            <!-- Bases de données -->
+            <div class="skill-card">
+                <div class="skill-icon" style="background: linear-gradient(135deg, #00b894, #55efc4);">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Bases de données</h3>
+                <div class="skill-chips">
+                    <span>PostgreSQL</span>
+                    <span>SQL</span>
+                    <span>Access</span>
+                    <span>Modélisation</span>
+                    <span>Normalisation (3NF)</span>
+                    <span>Requêtes complexes</span>
+                </div>
+            </div>
+            
+            <!-- Programmation -->
+            <div class="skill-card">
+                <div class="skill-icon" style="background: linear-gradient(135deg, #fd79a8, #e17055);">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Programmation</h3>
+                <div class="skill-chips">
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>C</span>
+                    <span>Pascal</span>
+                    <span>JavaScript</span>
+                    <span>Bash</span>
+                </div>
+            </div>
+            
+            <!-- Outils & Méthodes -->
+            <div class="skill-card">
+                <div class="skill-icon" style="background: linear-gradient(135deg, #fdcb6e, #f39c12);">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Outils & Méthodes</h3>
+                <div class="skill-chips">
+                    <span>VS Code</span>
+                    <span>Git</span>
+                    <span>GitLab</span>
+                    <span>JavaFX</span>
+                    <span>Figma</span>
+                    <span>Canva</span>
+                    <span>GanttProject</span>
+                    <span>Agilité</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+PROJECTS
+============================================ -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio</span>
+            <h2>Mes projets académiques</h2>
+            <p>8 projets réalisés en BUT Informatique</p>
+        </div>
+        
+        <div class="projects-grid">
+            
+            <!-- Projet 1 : Learn Conquer -->
+            <div class="project-card">
+                <div class="project-badge" style="background: #6c5ce7;">
+                    <i class="fas fa-gamepad"></i> Java
+                </div>
+                <h3>Learn Conquer</h3>
+                <p>Jeu ludo-pédagogique développé en Java. Le joueur évolue sur une carte interactive et répond à des questions pour progresser.</p>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>iJava</span>
+                    <span>Fichiers CSV</span>
+                    <span>POO</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-gitlab"></i> Code source</a>
+                    <a href="#" class="project-link"><i class="fas fa-book"></i> README</a>
+                </div>
+            </div>
+            
+            <!-- Projet 2 : Machine Virtuelle Debian -->
+            <div class="project-card">
+                <div class="project-badge" style="background: #00b894;">
+                    <i class="fas fa-server"></i> Systèmes
+                </div>
+                <h3>Installation VM Debian</h3>
+                <p>Installation et configuration d'une machine virtuelle Debian avec VirtualBox. Découverte de l'environnement Linux et du terminal.</p>
+                <div class="project-tech">
+                    <span>Debian</span>
+                    <span>VirtualBox</span>
+                    <span>Linux</span>
+                    <span>Bash</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-play"></i> Présentation</a>
+                </div>
+            </div>
+            
+            <!-- Projet 3 : Garage Automobile -->
+            <div class="project-card">
+                <div class="project-badge" style="background: #fdcb6e;">
+                    <i class="fas fa-database"></i> Base de données
+                </div>
+                <h3>Garage Automobile</h3>
+                <p>Conception d'une base de données relationnelle avec Access pour gérer clients, véhicules, interventions et factures.</p>
+                <div class="project-tech">
+                    <span>Access</span>
+                    <span>SQL</span>
+                    <span>Modélisation</span>
+                    <span>Formulaires</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-database"></i> Base de données</a>
+                </div>
+            </div>
+            
+            <!-- Projet 4 : Covoiturage -->
+            <div class="project-card">
+                <div class="project-badge" style="background: #fd79a8;">
+                    <i class="fas fa-car"></i> Web
+                </div>
+                <h3>Plateforme Covoiturage</h3>
+                <p>Développement d'une plateforme de covoiturage en HTML/CSS pour les employés de FromSoftware.</p>
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>UI/UX</span>
+                    <span>Responsive</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-globe"></i> Site web</a>
+                </div>
+            </div>
+            
+            <!-- Projet 5 : Exploration algorithmique -->
+            <div class="project-card">
+                <div class="project-badge" style="background: #e17055;">
+                    <i class="fas fa-project-diagram"></i> Algorithmique
+                </div>
+                <h3>Exploration algorithmique</h3>
+                <p>Assistant de voyage calculant des itinéraires optimisés avec des algorithmes de graphes (Yen) et interface JavaFX.</p>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>JavaFX</span>
+                    <span>Graphes</span>
+                    <span>Figma</span>
+                    <span>UML</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-gitlab"></i> Code source</a>
+                    <a href="#" class="project-link"><i class="fas fa-pencil-ruler"></i> Maquettes</a>
+                </div>
+            </div>
+            
+            <!-- Projet 6 : Forgejo -->
+            <div class="project-card">
+                <div class="project-badge" style="background: #a29bfe;">
+                    <i class="fas fa-code-branch"></i> Devops
+                </div>
+                <h3>Déploiement Forgejo</h3>
+                <p>Installation d'un serveur Forgejo (Git) sous Debian avec configuration réseau et gestion des services.</p>
+                <div class="project-tech">
+                    <span>Debian</span>
+                    <span>VirtualBox</span>
+                    <span>Forgejo</span>
+                    <span>Git</span>
+                    <span>Systemd</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-gitlab"></i> Projet</a>
+                    <a href="#" class="project-link"><i class="fas fa-file-alt"></i> Rapport</a>
+                </div>
+            </div>
+            
+            <!-- Projet 7 : Parcoursup -->
+            <div class="project-card">
+                <div class="project-badge" style="background: #55efc4;">
+                    <i class="fas fa-chart-bar"></i> Analyse de données
+                </div>
+                <h3>Exploitation Parcoursup</h3>
+                <p>Importation, normalisation et analyse des données Parcoursup avec PostgreSQL. Requêtes SQL complexes.</p>
+                <div class="project-tech">
+                    <span>PostgreSQL</span>
+                    <span>SQL</span>
+                    <span>Normalisation</span>
+                    <span>CSV</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-database"></i> Scripts SQL</a>
+                </div>
+            </div>
+            
+            <!-- Projet 8 : Ordinateur quantique -->
+            <div class="project-card">
+                <div class="project-badge" style="background: #f39c12;">
+                    <i class="fas fa-atom"></i> Vulgarisation
+                </div>
+                <h3>Ordinateur quantique</h3>
+                <p>Vidéo de vulgarisation scientifique expliquant les principes de l'ordinateur quantique : qubits, superposition, intrication.</p>
+                <div class="project-tech">
+                    <span>Recherche</span>
+                    <span>Scripting</span>
+                    <span>Voix-off</span>
+                    <span>Montage</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fas fa-video"></i> Projet</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+CV SECTION
+============================================ -->
+<section id="cv" class="cv-section">
+    <div class="container">
+        <div class="cv-wrapper">
+            <div class="cv-content">
+                <span class="section-tag"><i class="fas fa-file-pdf"></i> CV</span>
+                <h2>Mon curriculum vitae</h2>
+                <p>Étudiante en BUT Informatique, spécialisée en systèmes, réseaux et bases de données.</p>
+                
+                <div class="cv-grid">
+                    <div class="cv-block">
+                        <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+                        <div class="cv-item">
+                            <span class="cv-date">2025 - En cours</span>
+                            <strong>BUT 1 Informatique</strong>
+                            <span>IUT de Lille, Villeneuve d'Ascq</span>
+                        </div>
+                        <div class="cv-item">
+                            <span class="cv-date">2024 - 2025</span>
+                            <strong>Licence 1 Informatique</strong>
+                            <span>Université Mouloud Mammeri, Tizi Ouzou</span>
+                        </div>
+                        <div class="cv-item">
+                            <span class="cv-date">2024</span>
+                            <strong>Baccalauréat Sciences Expérimentales</strong>
+                            <span>Mention Bien · Lycée Hocine AIT AHMED</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-block">
+                        <h3><i class="fas fa-code"></i> Langages</h3>
+                        <div class="cv-langs">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>HTML/CSS</span>
+                            <span>C</span>
+                            <span>Pascal</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-block">
+                        <h3><i class="fas fa-language"></i> Langues</h3>
+                        <div class="cv-langs">
+                            <span>Kabyle · Maternelle</span>
+                            <span>Français · Courant</span>
+                            <span>Arabe · Courant</span>
+                            <span>Anglais · Intermédiaire</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-block">
+                        <h3><i class="fas fa-heart"></i> Centres d'intérêt</h3>
+                        <div class="cv-langs">
+                            <span>📚 Lecture</span>
+                            <span>🔒 Cybersécurité</span>
+                            <span>🥋 Wushu</span>
+                            <span>🔬 Veille technologique</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cv-actions">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Télécharger le CV
+                    </a>
+                    <a href="mailto:aziza.arab.contact@gmail.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+CONTACT
+============================================ -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Contact</span>
+                <h2>Parlons de votre projet</h2>
+                <p>Je suis à la recherche d'une alternance à partir de septembre 2026. N'hésitez pas à me contacter !</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:aziza.arab.contact@gmail.com">aziza.arab.contact@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Téléphone</strong>
+                            <span>+33 7 59 04 31 77</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Adresse</strong>
+                            <span>Rue de l'orangerie 94170 Le Perreux-sur-Marne</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-gitlab"></i>
+                        <div>
+                            <strong>GitLab</strong>
+                            <a href="https://gitlab.com/aziza.arab.contact" target="_blank">@aziza.arab.contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="votre@email.fr">
+                </div>
+                <div class="form-group full-width">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" placeholder="Objet de votre message">
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Votre message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Envoyer
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+FOOTER
+============================================ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2026 Aziza Arab · Made with <i class="fas fa-heart" style="color: #6c5ce7;"></i></p>
+            <div class="footer-social">
+                <a href="https://gitlab.com/aziza.arab.contact" target="_blank" aria-label="GitLab">
+                    <i class="fab fa-gitlab"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile menu toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+    
+    // Close menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+    
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+    
+    // Intersection Observer for animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    document.querySelectorAll('.skill-card, .project-card, .contact-item, .cv-block').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.6s ease';
+        observer.observe(el);
+    });
+</script>
+</body>
+</html>
