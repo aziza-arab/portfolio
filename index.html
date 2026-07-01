@@ -125,21 +125,6 @@
         .project-visual i { font-size: 3.5rem; color: var(--accent); opacity: 0.4; }
         .project-visual p { color: var(--text-secondary); font-size: 0.9rem; margin-top: 10px; }
 
-        .cv-section { padding: var(--spacing) 0; background: var(--bg-secondary); }
-        .cv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 32px; margin: 40px 0; }
-        .cv-block { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; }
-        .cv-block h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
-        .cv-block h3 i { color: var(--accent); }
-        .cv-item { display: flex; flex-direction: column; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
-        .cv-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .cv-date { font-size: 0.8rem; font-weight: 600; color: var(--accent-secondary); }
-        .cv-item strong { font-size: 1rem; margin: 4px 0; }
-        .cv-item span { font-size: 0.9rem; color: var(--text-secondary); }
-        .cv-langs { display: flex; flex-wrap: wrap; gap: 10px; }
-        .cv-langs span { padding: 6px 18px; background: var(--bg-primary); border: 1px solid var(--border); border-radius: 999px; font-size: 0.85rem; font-weight: 500; color: var(--text-secondary); }
-        .cv-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px; }
-        .cv-profile { color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px; font-size: 1.05rem; }
-
         .contact { padding: var(--spacing) 0; background: var(--bg-secondary); }
         .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
         .contact-info h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 16px; }
@@ -183,7 +168,6 @@
             .hero-stats { gap: 32px; }
             .stat-number { font-size: 1.8rem; }
             .project-detail { padding: 24px; }
-            .cv-grid { grid-template-columns: 1fr; }
             .hero { padding: 120px 0 60px; }
             .contact-actions .btn { font-size: 0.9rem; padding: 12px 20px; }
         }
@@ -210,7 +194,6 @@
             <li><a href="#about"><i class="fas fa-user"></i> À propos</a></li>
             <li><a href="#skills"><i class="fas fa-cog"></i> Compétences</a></li>
             <li><a href="#projects"><i class="fas fa-folder-open"></i> Projets</a></li>
-            <li><a href="#cv"><i class="fas fa-file-pdf"></i> CV</a></li>
             <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
         <button class="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
@@ -348,7 +331,7 @@
                 <p class="project-subtitle">Base de données relationnelle sous Access</p>
                 <div class="project-visual"><i class="fas fa-database"></i><p>Schéma relationnel de la base de données du garage automobile sous Microsoft Access.</p></div>
                 <div class="project-desc"><strong>Résumé :</strong> Création d'une base de données relationnelle avec Microsoft Access pour gérer un garage automobile. Stockage et organisation des données des clients, véhicules, interventions, pièces et factures.</div>
-                <div class="project-section"><h                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Conception d'une base de données relationnelle</li><li>Utilisation de Microsoft Access</li><li>Création de tables et gestion des relations</li><li>Mise en place de formulaires et d'états</li></ul></div>
+                <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Conception d'une base de données relationnelle</li><li>Utilisation de Microsoft Access</li><li>Création de tables et gestion des relations</li><li>Mise en place de formulaires et d'états</li></ul></div>
                 <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de comprendre la conception d'une base de données relationnelle avec Microsoft Access.</p></div>
                 <div class="project-links">
                     <a href="https://gitlab.com/aziza.arab.contact/sae_but1/-/tree/main/Sae-s1/SAE1.04/projet%20BDD" target="_blank"><i class="fas fa-database"></i> Projet BDD</a>
@@ -363,8 +346,7 @@
                 </div>
                 <h3>Plateforme de Covoiturage</h3>
                 <p class="project-subtitle">Site web en HTML/CSS</p>
-                <div class="project-visual"><i class="fas fa-globe"></i><p>Interface de la plateforme de covoiturage permettant la recherche et la proposition de trajets.</p></div>
-                <div class="project-desc"><strong>Résumé :</strong> Développement d'une plateforme de covoiturage en ligne destinée aux employés de l'entreprise FromSoftware. L'utilisateur peut créer un compte, proposer un trajet ou rechercher une offre existante.</div>
+                <div class="project-visual"><i class="fas                 <div class="project-desc"><strong>Résumé :</strong> Développement d'une plateforme de covoiturage en ligne destinée aux employés de l'entreprise FromSoftware. L'utilisateur peut créer un compte, proposer un trajet ou rechercher une offre existante.</div>
                 <div class="project-section"><h4><i class="fas fa-code"></i> Compétences techniques</h4><ul><li>Création de pages web en HTML5</li><li>Mise en forme et structuration avec CSS</li><li>Organisation d'une interface multi-pages</li></ul></div>
                 <div class="project-bilan"><p><strong>📊 Bilan :</strong> Cette SAE m'a permis de travailler sur la création d'un site web en HTML et CSS.</p></div>
                 <div class="project-links">
@@ -453,84 +435,6 @@
                 </div>
             </div>
 
-        </div>
-    </div>
-</section>
-
-<!-- ===== CV SECTION ===== -->
-<section id="cv" class="cv-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag"><i class="fas fa-file-pdf"></i> CV</span>
-            <h2>Mon curriculum vitae</h2>
-            <p>Étudiante en BUT Informatique, parcours B · Déploiement d'applications communicantes et sécurisées.</p>
-        </div>
-
-        <div class="cv-profile">
-            <p><strong>Aziza Arab</strong> · +33 7 59 04 31 77 · aziza.arab.contact@gmail.com</p>
-            <p>Rue de l'orangerie, 94170 Le Perreux-sur-Marne</p>
-        </div>
-
-        <div class="cv-grid">
-            <div class="cv-block">
-                <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
-                <div class="cv-item">
-                    <span class="cv-date">2025 - En cours</span>
-                    <strong>BUT 1 Informatique</strong>
-                    <span>IUT de Lille, Villeneuve d'Ascq</span>
-                </div>
-                <div class="cv-item">
-                    <span class="cv-date">2024 - 2025</span>
-                    <strong>Licence 1 Informatique</strong>
-                    <span>Université Mouloud Mammeri, Tizi Ouzou</span>
-                </div>
-                <div class="cv-item">
-                    <span class="cv-date">2024</span>
-                    <strong>Baccalauréat Sciences Expérimentales</strong>
-                    <span>Mention Bien · Lycée Hocine AIT AHMED</span>
-                </div>
-            </div>
-
-            <div class="cv-block">
-                <h3><i class="fas fa-code"></i> Langages de programmation</h3>
-                <div class="cv-langs">
-                    <span>Java</span><span>C</span><span>Pascal</span>
-                    <span>HTML5</span><span>CSS3</span><span>SQL</span>
-                </div>
-            </div>
-
-            <div class="cv-block">
-                <h3><i class="fas fa-server"></i> Systèmes & Réseaux</h3>
-                <div class="cv-langs">
-                    <span>Linux (Debian)</span><span>Windows</span><span>VirtualBox</span>
-                    <span>GNS3</span><span>TCP/IP</span><span>DNS/DHCP</span><span>Firewall</span><span>SSH</span>
-                </div>
-            </div>
-
-            <div class="cv-block">
-                <h3><i class="fas fa-language"></i> Langues</h3>
-                <div class="cv-langs">
-                    <span>Kabyle · Maternelle</span>
-                    <span>Français · Courant</span>
-                    <span>Arabe · Courant</span>
-                    <span>Anglais · Intermédiaire</span>
-                </div>
-            </div>
-
-            <div class="cv-block">
-                <h3><i class="fas fa-heart"></i> Centres d'intérêt</h3>
-                <div class="cv-langs">
-                    <span>📚 Lecture</span>
-                    <span>🔒 Cybersécurité</span>
-                    <span>🥋 Wushu</span>
-                    <span>🔬 Veille technologique</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="cv-actions">
-            <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Télécharger le CV</a>
-            <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Me contacter</a>
         </div>
     </div>
 </section>
